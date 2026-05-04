@@ -19,5 +19,3 @@
 ## Author
 
 Dmitriy Masterov
-
-
