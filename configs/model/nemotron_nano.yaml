@@ -1,0 +1,12 @@
+# Nemotron Nano model configuration
+name: nvidia/Nemotron-Nano-9B
+model_class: nemotron_nano
+dtype: bfloat16
+max_context_length: 32768
+trust_remote_code: true
+device: auto  # auto / cuda / cpu
+
+# Inference engine settings (used by src.inference.engine)
+engine: transformers  # transformers / vllm
+load_in_4bit: false
+load_in_8bit: false

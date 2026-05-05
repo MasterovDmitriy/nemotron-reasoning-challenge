@@ -1,0 +1,13 @@
+# Zero-shot prompting: no examples, just instruction + question
+strategy: zero_shot
+template_name: zero_shot_v1
+
+system_prompt: |
+  You are a careful reasoning assistant. Solve the given problem step by step
+  and provide a clear final answer.
+
+user_prompt_template: |
+  Question: {question}
+
+  Provide your reasoning, then state your final answer on a new line as:
+  Answer: <your answer>

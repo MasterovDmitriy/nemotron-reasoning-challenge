@@ -1,0 +1,12 @@
+# @package _global_
+# Baseline experiment: zero-shot + greedy decoding on small data subset
+# Use: python scripts/run_inference.py +experiment=baseline
+
+defaults:
+  - override /model: nemotron_nano
+  - override /prompt: zero_shot
+  - override /inference: greedy
+  - override /data: small
+
+tracking:
+  experiment_id: EXP-0001-baseline

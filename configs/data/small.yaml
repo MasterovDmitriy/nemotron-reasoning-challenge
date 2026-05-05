@@ -1,0 +1,7 @@
+# Small data subset for fast iteration and debugging
+name: small
+source: kaggle  # kaggle / huggingface / local
+split: validation
+n_samples: 50
+shuffle: true
+shuffle_seed: 42
