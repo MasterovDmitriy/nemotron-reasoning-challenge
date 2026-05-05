@@ -7,7 +7,7 @@ defaults:
   - prompt: zero_shot
   - inference: greedy
   - data: small
-  - experiment: null  # null by default, override with +experiment=baseline
+  - optional experiment: null  # null by default, override with +experiment=baseline
   - override hydra/hydra_logging: default
   - override hydra/job_logging: default
 
