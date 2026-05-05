@@ -1,0 +1,7 @@
+# Full evaluation set
+name: full
+source: kaggle
+split: validation
+n_samples: null  # null = use all
+shuffle: false
+shuffle_seed: 42

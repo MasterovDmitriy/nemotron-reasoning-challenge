@@ -1,0 +1,10 @@
+# Self-consistency: sample N candidates, pick by majority vote
+strategy: self_consistency
+do_sample: true
+temperature: 0.7
+top_p: 0.95
+top_k: 50
+max_new_tokens: 2048
+num_return_sequences: 5  # how many samples to draw
+repetition_penalty: 1.0
+aggregation: majority_vote  # majority_vote / longest_chain / weighted

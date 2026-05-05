@@ -1,0 +1,15 @@
+# Chain-of-Thought prompting: explicit "think step by step" instruction
+strategy: cot
+template_name: cot_v1
+
+system_prompt: |
+  You are an expert problem solver. Always reason step by step before
+  giving a final answer. Show your work clearly.
+
+user_prompt_template: |
+  Question: {question}
+
+  Let's think step by step.
+
+  After your reasoning, state your final answer on a new line as:
+  Answer: <your answer>

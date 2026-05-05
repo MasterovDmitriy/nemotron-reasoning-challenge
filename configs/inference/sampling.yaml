@@ -1,0 +1,9 @@
+# Stochastic sampling for diversity
+strategy: sampling
+do_sample: true
+temperature: 0.7
+top_p: 0.95
+top_k: 50
+max_new_tokens: 2048
+num_return_sequences: 1
+repetition_penalty: 1.0
